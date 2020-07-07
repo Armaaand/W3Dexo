@@ -5,7 +5,9 @@ import Grid from '@material-ui/core/Grid';
 
 import { TopPage } from './components/TopPage';
 import { DisplayCompanies } from './components/Companies';
-
+import { Stories } from './components/Stories';
+import { Features } from './components/Features';
+import { Footer } from './components/Footer';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -22,6 +24,9 @@ function App() {
       <Grid container spacing={3}>
         <TopPage />
         <DisplayCompanies />
+        <Stories />
+        <Features />
+        <Footer />
       </Grid>
     </div>
   );

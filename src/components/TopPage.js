@@ -10,9 +10,6 @@ import logo_W3D from '../img/W3D_logo_white.png';
 
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-    },
     topPage: {
         //background: "linear-gradient(#220CAD 99%, #FFFFFF)",
         background: "linear-gradient(100deg, #220CAD, #140767)",
@@ -36,8 +33,6 @@ const useStyles = makeStyles((theme) => ({
         color: "#5343BF",
     },
 }));
-
-
 
 export const TopPage = () => {
 

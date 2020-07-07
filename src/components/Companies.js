@@ -11,9 +11,6 @@ import logo_soat from "../img/companies/soat_logo.png"
 import logo_vaduo from "../img/companies/vaduo_logo.png"
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-    },
     companiesBox: {
         borderRadius: "20px",
         background: "linear-gradient(145deg, #d6d6d6, #ffffff)",
