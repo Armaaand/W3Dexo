@@ -23,7 +23,8 @@ const useStyles = makeStyles((theme) => ({
         "&:hover": {
             borderRadius: "15px",
             height: "105px",
-            width: "205px",
+            width: "210px",
+            margin: "15px 20px",
         }
     },
     companiesLogo: {

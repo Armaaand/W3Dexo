@@ -78,7 +78,7 @@ export const Footer = () => {
                      à la recherche de l'entreprise où ils seront heureux</p>
                 </Grid>
                 <Grid item xs={6}></Grid>
-                <Grid item xs={3}>
+                <Grid item xs={3} style={{ textAlign: 'right' }} >
                     <ul>Mentions Légales</ul>
                     <ul>Confidentialité</ul>
                     <ul>Reporter un bug</ul>

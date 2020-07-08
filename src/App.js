@@ -5,9 +5,9 @@ import Grid from '@material-ui/core/Grid';
 
 import { TopPage } from './components/TopPage';
 import { DisplayCompanies } from './components/Companies';
-import { Stories } from './components/Stories';
 import { Features } from './components/Features';
 import { Footer } from './components/Footer';
+import Testimonials from './components/testimonials';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -21,10 +21,10 @@ function App() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={3}>
+      <Grid container spacing={3}> */}
         <TopPage />
         <DisplayCompanies />
-        <Stories />
+        <Testimonials />
         <Features />
         <Footer />
       </Grid>
