@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -29,16 +29,37 @@ h3 {
     position: relative;
 } */
 .card {
-  padding: 30px;
+  padding: 40px;
   position: relative;
-  margin: 30px;
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25);
+  min-height: 150px;
+  margin: 60px;
+  box-shadow: 21px 24px 48px -13px rgba(0,0,0,0.75);
+  border-radius: 15px;
+  border-bottom: 10px solid transparent;
   background-color: #220CAD ;
   transition: all 0.3s ease-in-out;
   z-index: 1;
+  &.slick-current{
+    background-color: yellow;
+  }
 }
+.card:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: #220cad;
+  border-bottom: 0;
+  margin-left: -20px;
+  margin-bottom: -30px;
+}
+
 .card:hover {
   cursor: pointer;
+  background-color: #3112fa;
   transform: translateY(0px);
 }
 .card h4 {
@@ -59,29 +80,12 @@ h3 {
   background: black;
 }
 
-
 .slick-dots{
   margin: 0 16px;
 }
 
 .slick-dots li {
   margin: 0 16px;
-}
-
-.slick-dots li button:before {
-  content: " ";
-  background: #220CAD;
-  opacity: 1;
-  height: 4px;
-  width: 40px;
-}
-
-.slick-dots li.slick-active button:before {
-  content: " ";
-  background: #220CAD;
-  opacity: 1;
-  height: 4px;
-  width: 40px;
 }
 
 
@@ -91,3 +95,17 @@ h3 {
   display: flex;
   justify-content: center;
 }
+
+.avatarName {
+  text-align: center;
+  span {
+    color:grey;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 22px;
+
+}
+
