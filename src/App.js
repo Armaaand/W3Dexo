@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 
 import { TopPage } from './components/TopPage';
 import { DisplayCompanies } from './components/Companies';
-import { Features } from './components/Features';
+import Features from './components/features';
 import { Footer } from './components/Footer';
 import Testimonials from './components/testimonials';
 

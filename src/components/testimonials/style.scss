@@ -39,9 +39,6 @@ h3 {
   background-color: #220CAD ;
   transition: all 0.3s ease-in-out;
   z-index: 1;
-  &.slick-current{
-    background-color: yellow;
-  }
 }
 .card:after{
   content: '';
