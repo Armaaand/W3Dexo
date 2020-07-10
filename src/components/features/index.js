@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useEffect}  from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import './style.scss';
 import articleLogo from '../../img/paper.svg';
 import videoLogo from '../../img/videoplayer.svg';
 import testLogo from '../../img/test.svg';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 
 import Grid from '@material-ui/core/Grid';
@@ -28,15 +30,19 @@ const useStyles = makeStyles((theme) => ({
 const Features = () => {
 
     const classes = useStyles();
-
+    useEffect(() => {
+        Aos.init({duration: 1500});
+    
+      }, [])
+      
     return (
         <Grid container xs={12} className={classes.section}>
-            <Grid item xs={4} className={classes.mainTitle}>
+            <Grid item xs={4} className={classes.mainTitle} data-aos="fade">
                 <h2>WeLoveDevs.com c'est aussi un média pour explorer le bonheur des développeurs</h2>
             </Grid>
             <Grid container xs={12} spacing={5} className={classes.cardsContainer}>
                 <Grid item>
-                    <div class="presentation cards">
+                    <div class="presentation cards" data-aos="fade-right">
                         <div class="wrapper wrapper1">
                             <div class="data">
                                 <div class="content">
@@ -50,7 +56,7 @@ const Features = () => {
                     </div>
                 </Grid>
                 <Grid item>
-                    <div class="presentation cards">
+                    <div class="presentation cards" data-aos="fade-up">
                         <div class="wrapper wrapper2">
                             <div class="data">
                                 <div class="content">
@@ -64,7 +70,7 @@ const Features = () => {
                     </div>
                 </Grid>
                 <Grid item>
-                    <div class="presentation cards">
+                    <div class="presentation cards" data-aos="fade-left">
                         <div class="wrapper wrapper3">
                             <div class="data">
                                 <div class="content">

@@ -3,7 +3,7 @@ import './App.css';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 
-import { TopPage } from './components/TopPage';
+import { TopPage } from './components/TopPage/TopPage';
 import { DisplayCompanies } from './components/Companies';
 import Features from './components/features';
 import { Footer } from './components/Footer';

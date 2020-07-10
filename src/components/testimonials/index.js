@@ -24,7 +24,8 @@ class testimonials extends Component {
             dots: true,
             infinite: true,
             autoplay: true,
-            speed: 500,
+            speed: 1500,
+            autoplaySpeed: 5000,
             slidesToShow: 3,
             slidesToScroll: 1,
             arrows: false,
@@ -96,7 +97,7 @@ class testimonials extends Component {
                     <div>
                         <div className="card">
                             <img src={quote} width='30px' />
-                            <p>Venant d'obtenir mon BTS SIO à l'EPSI de Lille. Suis-je le futur alternant chez WeLoveDevs ?</p>
+                            <p>Venant d'obtenir mon BTS SIO à l'EPSI de Lille, suis-je le futur alternant chez WeLoveDevs ?</p>
                         </div>
                         <div className="avatar">
                             <Avatar alt="Armand Gentot" src={avatar4} />

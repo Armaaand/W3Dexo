@@ -1,7 +1,10 @@
-import React from 'react';
+import React , {useEffect} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
 import Grid from '@material-ui/core/Grid';
+import Aos from 'aos';
+import "aos/dist/aos.css";
+
 
 import logo_ippon from "../img/companies/ippon_logo.png"
 import logo_tilleuls from "../img/companies/les_tilleuls_logo.png"
@@ -19,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
         width: "200px",
         display: "flex",
         margin: "20px",
-        transition: "0.1s",
+        transition: "0.15s",
         "&:hover": {
             borderRadius: "15px",
             height: "105px",
@@ -36,8 +39,13 @@ export const DisplayCompanies = () => {
 
     const classes = useStyles();
 
+    useEffect(() => {
+        Aos.init({duration: 1500});
+    
+      }, [])
+
     return (
-        <Grid container justify="center" style={{ margin: "30px" }}>
+        <Grid container justify="center" style={{ margin: "30px" }} data-aos="fade">
             <Grid container className={classes.companiesBox}>
                 <Grid item className={classes.companiesLogo}>
                     <img src={logo_ippon} height="50" />
