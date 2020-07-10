@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito");
 * {
   font-family: 'Nunito', sans-serif;
+  &:focus{
+    outline: 0;
+    outline: none;
+  }
 }
 
 body {
@@ -39,34 +43,29 @@ h3 {
   background-color: #220CAD ;
   transition: all 0.3s ease-in-out;
   z-index: 1;
-}
-.card:after{
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border: 20px solid transparent;
-  border-top-color: #220cad;
-  border-bottom: 0;
-  margin-left: -20px;
-  margin-bottom: -30px;
-}
+  &:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #220cad;
+    border-bottom: 0;
+    margin-left: -20px;
+    margin-bottom: -30px;
+  }
+  &:hover{
+    cursor: pointer;
+    background-color: #3112fa;
+    transform: translateY(0px);
+  }
 
-.card:hover {
-  cursor: pointer;
-  background-color: #3112fa;
-  transform: translateY(0px);
-}
-.card h4 {
-  text-transform: uppercase;
-  color: #ffffff;
-  font-weight: 900;
-}
-.card p {
-  line-height: 1.5;
-  color: white;
+  p {
+    line-height: 1.5;
+    color: white;
+  }
 }
 
 .slick-prev {
